@@ -8,17 +8,17 @@ header {
 }
 
 .my-work {
-    border: 1px solid red;
 }
 
-.my-work h2 {
-    text-align: center;
+.my-work {
 }
 
 .about-me {
-    border: 1px solid red;
 }
 
 .contact {
-    border: 1px solid red;
+}
+
+#project-1 {
+    background-image: url("../images/james-harrison-vpOeXr5wmR4-unsplash.jpg");
 }

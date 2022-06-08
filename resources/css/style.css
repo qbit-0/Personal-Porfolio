@@ -24,7 +24,7 @@ h6 {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 h2 {
@@ -47,6 +47,17 @@ header {
     z-index: -1;
 
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1 {
+    min-height: 30rem;
+
+    color: white;
+
+    text-shadow: 0rem 0.25rem blue;
+    text-align: center;
 }
 
 nav {
@@ -74,6 +85,8 @@ main {
 section {}
 
 footer {
+    padding: 1rem;
+
     background-color: green;
 
     text-align: center;
@@ -101,11 +114,15 @@ figure img {
     width: 40rem;
     height: 20rem;
     margin: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
 
     background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     overflow: hidden;
+    box-shadow: 1rem 1rem crimson;
 }
 
 .project .project-info {
@@ -117,8 +134,10 @@ figure img {
     width: 50%;
     height: 100%;
     opacity: 0;
+    border-right: 0.25rem solid blue;
 
-    background-color: gray;
+    background-color: hsla(20, 100%, 50%, 0.5);
+    backdrop-filter: blur(5px);
 
     transition: all 200ms ease;
 }
@@ -140,8 +159,7 @@ figure img {
     transition: all 200ms ease 100ms;
 }
 
-nav.static {
-}
+nav.static {}
 
 nav.fixed {
     position: fixed;
@@ -149,7 +167,7 @@ nav.fixed {
 
     opacity: 0;
 
-    background-color: red;
+    background-color: blueviolet;
 
     transition: all 200ms ease;
 }
