@@ -151,7 +151,7 @@ footer {
     opacity: 0;
     border-right: 0.25rem solid blue;
 
-    background-color: hsla(20, 100%, 50%, 0.5);
+    background-color: hsla(0, 0%, 0%, 0.5);
     backdrop-filter: blur(5px);
 
     transition: all 200ms ease;

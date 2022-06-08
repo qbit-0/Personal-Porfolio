@@ -49,6 +49,19 @@ header .header-info .header-right figure img {
     display: block;
 }
 
+.featured-project {
+
+}
+
+.featured-project canvas {
+    width: 75vw;
+    height: 75vh;
+    display: block;
+    margin: 0 auto;
+
+    background-color: blue;
+}
+
 .my-work {
 }
 
