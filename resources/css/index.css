@@ -1,0 +1,32 @@
+.hero {
+    width: 100%;
+    height: 25rem;
+    padding: 1rem;
+
+    background-image: url("../images/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+}
+
+.featured-project {
+
+}
+
+.my-work {
+    border: 1px solid red;
+}
+
+.my-work h2 {
+    text-align: center;
+}
+
+.about-me {
+    border: 1px solid red;
+}
+
+.contact {
+    border: 1px solid red;
+}

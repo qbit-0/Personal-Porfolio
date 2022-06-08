@@ -1,0 +1,133 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: coral;
+}
+
+header {
+    z-index: 1;
+
+    width: 100%;
+    padding: 1rem;
+
+    background-color: red;
+}
+
+nav {
+    padding: 1rem;
+
+    background-color: yellow;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    background-color: aqua;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main {}
+
+section {}
+
+footer {
+    background-color: green;
+
+    text-align: center;
+}
+
+figure {
+    overflow: hidden;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Classes */
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    width: 40rem;
+    height: 20rem;
+    margin: 1rem;
+    border-radius: 1rem;
+
+    background-color: white;
+
+    overflow: hidden;
+}
+
+.project .project-overview {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+
+    background-color: gray;
+}
+
+.project .project-overview .project-desc {
+    padding: 1rem;
+}
+
+.project .project-overview .project-buttons {
+    padding: 1rem;
+    margin-top: auto;
+
+    background-color: aqua;
+}
+
+.fixed-header {
+    position: fixed;
+}
