@@ -28,11 +28,11 @@ h1 {
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 h3 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 html {
@@ -44,18 +44,16 @@ body {
 }
 
 header {
-    z-index: 1;
+    z-index: -1;
 
-    width: 100%;
-    padding: 1rem;
-
-    background-color: red;
+    background-attachment: fixed;
 }
 
 nav {
-    padding: 1rem;
+    z-index: 1;
 
-    background-color: yellow;
+    width: 100%;
+    padding: 3rem;
 }
 
 nav ul li {
@@ -69,7 +67,9 @@ nav ul li a {
     text-decoration: none;
 }
 
-main {}
+main {
+    background-color: coral;
+}
 
 section {}
 
@@ -101,33 +101,55 @@ figure img {
     width: 40rem;
     height: 20rem;
     margin: 1rem;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
 
     background-color: white;
 
     overflow: hidden;
 }
 
-.project .project-overview {
+.project .project-info {
+    position: relative;
+    left: -20rem;
+
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
+    opacity: 0;
 
     background-color: gray;
+
+    transition: all 200ms ease;
 }
 
-.project .project-overview .project-desc {
+.project .project-info .project-desc {
     padding: 1rem;
 }
 
-.project .project-overview .project-buttons {
+.project .project-info .project-links {
+    position: relative;
+    bottom: -20rem;
+
     padding: 1rem;
     margin-top: auto;
+    opacity: 0;
 
     background-color: aqua;
+
+    transition: all 200ms ease 100ms;
 }
 
-.fixed-header {
+nav.static {
+}
+
+nav.fixed {
     position: fixed;
+    top: -10rem;
+
+    opacity: 0;
+
+    background-color: red;
+
+    transition: all 200ms ease;
 }

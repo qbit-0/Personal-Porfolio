@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/index.css">
-    <script src="./resources/js/sticky-header.js"></script>
     <title>Duy Pham Portfolio | Home</title>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="static">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">My Work</a></li>
@@ -21,13 +20,19 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+
+        <nav class="fixed">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">My Work</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Duy Pham,<br>Software Engineer.</h1>
     </header>
 
     <main>
-        <section class="hero">
-            <h1>Duy Pham,<br>Software Engineer.</h1>
-        </section>
-
         <section class="featured-project">
             <h2>Featured Project</h2>
             <canvas>
@@ -38,12 +43,12 @@
             <h2>My Work</h2>
             <div class="showcase">
                 <div class="project">
-                    <div class="project-overview">
+                    <div class="project-info">
                         <div class="project-desc">
                             <h3>Project 1</h3>
                             <p>Description</p>
                         </div>
-                        <div class="project-buttons">
+                        <div class="project-links">
                             <button>
                                 View Demo
                             </button>
@@ -54,28 +59,51 @@
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-desc">
-                        <h3>Project 2</h3>
+                    <div class="project-info">
+                        <div class="project-desc">
+                            <h3>Project 2</h3>
+                            <p>Description</p>
+                        </div>
+                        <div class="project-links">
+                            <button>
+                                View Demo
+                            </button>
+                            <button>
+                                Github
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-desc">
-                        <h3>Project 3</h3>
+                    <div class="project-info">
+                        <div class="project-desc">
+                            <h3>Project 3</h3>
+                            <p>Description</p>
+                        </div>
+                        <div class="project-links">
+                            <button>
+                                View Demo
+                            </button>
+                            <button>
+                                Github
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="project">
-                    <div class="project-desc">
-                        <h3>Project 4</h3>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-desc">
-                        <h3>Project 5</h3>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project-desc">
-                        <h3>See More</h3>
+                    <div class="project-info">
+                        <div class="project-desc">
+                            <h3>Project 4</h3>
+                            <p>Description</p>
+                        </div>
+                        <div class="project-links">
+                            <button>
+                                View Demo
+                            </button>
+                            <button>
+                                Github
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,6 +121,8 @@
     <footer>
         <p>Designed and Built by Duy Pham</p>
     </footer>
+
+    <script src="./resources/js/general.js"></script>
 </body>
 
 </html>
