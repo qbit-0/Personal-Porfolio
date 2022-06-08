@@ -39,7 +39,7 @@ html {
 }
 
 body {
-    background-color: coral;
+    scroll-snap-type: y mandatory;
 }
 
 header {
@@ -52,6 +52,7 @@ header {
     background-size: cover;
 
     flex-direction: column;
+    scroll-snap-align: start;
 }
 
 nav {
@@ -118,14 +119,19 @@ main {
     background-color: coral;
 }
 
-section {}
+section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
 
 footer {
+    min-height: 100vh;
     padding: 1rem;
 
     background-color: green;
 
     text-align: center;
+    scroll-snap-align: start;
 }
 
 /* Classes */

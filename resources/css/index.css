@@ -1,3 +1,7 @@
+body {
+    scroll-snap-type: y mandatory;
+}
+
 header {
     min-height: 100vh;
 
@@ -62,11 +66,10 @@ header .header-info .header-right figure img {
 }
 
 .featured-project {
-
 }
 
 .featured-project canvas {
-    width: 75vw;
+    width: 75vh;
     height: 75vh;
     display: block;
     margin: 0 auto;
