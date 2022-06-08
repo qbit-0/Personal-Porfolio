@@ -1,18 +1,14 @@
-body {
-    scroll-snap-type: y mandatory;
+html {
+    scroll-snap-type: y proximity;
 }
 
 header {
     min-height: 100vh;
 
-    background-image: url("../images/alex-perez-pEgsWN0kwbQ-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../images/kevin-mueller-NjjONA3K0-k-unsplash.jpg");
 }
 
 header h1 {
-    color: white;
-
     text-align: center;
 }
 
@@ -66,17 +62,19 @@ header .header-info .header-right figure img {
 }
 
 .featured-project {
+    height: 100vh;
 }
 
 .featured-project canvas {
-    width: 75vh;
-    height: 75vh;
+    width: 80vw;
+    height: 80vh;
     display: block;
     margin: 0 auto;
 
     border-radius: 0.25rem;
 
     background-color: blue;
+    scroll-snap-align: center;
 }
 
 .my-work {

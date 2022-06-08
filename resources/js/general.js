@@ -2,6 +2,7 @@
 
 let navStatic = document.querySelector('nav.static');
 let navFixed = document.querySelector('nav.fixed');
+let body = document.querySelector('body');
 
 function updateNav() {
     let scrolled = window.scrollY;

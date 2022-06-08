@@ -10,6 +10,7 @@ h5,
 h6,
 p,
 a {
+    color: wheat;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -36,23 +37,26 @@ h3 {
 
 html {
     font-size: 16px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 body {
-    scroll-snap-type: y mandatory;
+    background-color: darkslategray;
 }
 
 header {
     z-index: -1;
 
+    min-height: 100vh;
     display: flex;
     padding: 4rem 0;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 
     flex-direction: column;
-    scroll-snap-align: start;
 }
 
 nav {
@@ -72,7 +76,7 @@ nav li {
 }
 
 nav a {
-    background-color: aqua;
+    background-color: navy;
     border-radius: 0.25rem;
     padding: 0.25rem;
     margin: 0.25rem;
@@ -93,7 +97,6 @@ nav p {
 
     margin-right: 4rem;
 
-    color: aqua;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -110,28 +113,22 @@ nav.fixed {
     background-color: rgba(138, 43, 226, 0.25);
     backdrop-filter: blur(10px) brightness(50%);
 
-    border-bottom: 0.25rem solid blueviolet;
-
     transition: all 200ms ease;
 }
 
 main {
-    background-color: coral;
 }
 
 section {
-    min-height: 100vh;
-    scroll-snap-align: start;
+    padding: 4rem 0;
 }
 
 footer {
-    min-height: 100vh;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
 
-    background-color: green;
+    background-color: darkred;
 
     text-align: center;
-    scroll-snap-align: start;
 }
 
 /* Classes */
