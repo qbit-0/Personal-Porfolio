@@ -5,7 +5,7 @@ let navFixed = document.querySelector('nav.fixed');
 
 function updateNav() {
     let scrolled = window.scrollY;
-    let navBot = navStatic.offsetTop + navStatic.offsetHeight + 100;
+    let navBot = navStatic.offsetTop + navStatic.offsetHeight + 400;
     if (scrolled >= navBot) {
         navFixed.style.top = '0';
         navFixed.style.opacity = '1';

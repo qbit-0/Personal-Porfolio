@@ -10,6 +10,18 @@ header h1 {
     color: white;
 
     text-align: center;
+}
+
+header strong {
+    display: inline-block;
+    padding: 1rem;
+    border: 4px solid yellow;
+    border-radius: 0.25rem;
+
+    backdrop-filter: blur(10px) brightness(50%);
+    box-shadow: 0.25rem 0.25rem red;
+
+    font-size: 6rem;
     text-shadow: 0rem 0.25rem blue;
 }
 
@@ -58,6 +70,8 @@ header .header-info .header-right figure img {
     height: 75vh;
     display: block;
     margin: 0 auto;
+
+    border-radius: 0.25rem;
 
     background-color: blue;
 }
