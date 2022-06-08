@@ -1,4 +1,3 @@
-/* Universal Styles */
 * {
     box-sizing: border-box;
 }
@@ -24,7 +23,7 @@ h6 {
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 h2 {
@@ -46,25 +45,24 @@ body {
 header {
     z-index: -1;
 
+    display: flex;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-}
 
-header h1 {
-    min-height: 30rem;
-
-    color: white;
-
-    text-shadow: 0rem 0.25rem blue;
-    text-align: center;
+    flex-direction: column;
 }
 
 nav {
     z-index: 1;
 
     width: 100%;
-    padding: 3rem;
+    padding: 1rem 1rem 1rem 4rem;
+    flex-grow: 0;
+}
+
+nav ul {
+    display: inline-block;
 }
 
 nav ul li {
@@ -73,9 +71,36 @@ nav ul li {
 
 nav ul li a {
     background-color: aqua;
+    margin: 0.25rem;
 
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
+}
+
+nav p {
+    float: right;
+
+    margin-right: 4rem;
+
+    color: aqua;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav.static {
+    margin-top: 4rem;
+}
+
+nav.fixed {
+    position: fixed;
+    top: -10rem;
+
+    opacity: 0;
+
+    background-color: blueviolet;
+
+    transition: all 200ms ease;
 }
 
 main {
@@ -90,16 +115,6 @@ footer {
     background-color: green;
 
     text-align: center;
-}
-
-figure {
-    overflow: hidden;
-}
-
-figure img {
-    max-width: 100%;
-    height: auto;
-    display: block;
 }
 
 /* Classes */
@@ -157,17 +172,4 @@ figure img {
     background-color: aqua;
 
     transition: all 200ms ease 100ms;
-}
-
-nav.static {}
-
-nav.fixed {
-    position: fixed;
-    top: -10rem;
-
-    opacity: 0;
-
-    background-color: blueviolet;
-
-    transition: all 200ms ease;
 }
