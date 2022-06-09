@@ -9,6 +9,17 @@
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script defer src="./resources/js/general.js"></script>
+    <script defer type="module" src="./resources/js/featured.js"></script>
+    <script defer type="module" src="./resources/js/projects/bouncing_ball.js"></script>
+    <script defer type="module" src="./resources/js/projects/game.js"></script>
 </head>
 
 <body>
@@ -16,8 +27,8 @@
         <nav class="static">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">My Work</a></li>
                 <li><a href="#">About Me</a></li>
+                <li><a href="#">My Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -25,8 +36,8 @@
         <nav class="fixed">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">My Work</a></li>
                 <li><a href="#">About Me</a></li>
+                <li><a href="#">My Work</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
 
@@ -35,22 +46,28 @@
 
         <div class="header-info">
             <div class="header-left">
-                <h1><strong>Duy Pham</strong><br>Software Engineer.</h1>
+                <h1><strong>Duy Pham</strong><br>Software Engineer</h1>
             </div>
             <div class="header-right">
-                <figure>
-                    <img src="./resources/images/james-harrison-vpOeXr5wmR4-unsplash.jpg" alt="" srcset="">
-                </figure>
             </div>
         </div>
     </header>
 
     <main>
+        <section class="about-me">
+            <h2>Who is Duy?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis mollitia illum numquam vero amet
+                maiores sit libero dolor est blanditiis quos laborum, doloremque unde! Quibusdam sit assumenda tempore
+                necessitatibus quod?</p>
+        </section>
+
         <section class="featured-project">
-            <canvas>
-            </canvas>
             <h2>Featured Project</h2>
-            <p>Description</p>
+            <canvas id="featured" width="640px" height="480px">
+            </canvas>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero facilis a saepe eos, nesciunt rem dolorum
+                itaque, laudantium, iure earum molestias harum voluptatibus. Repellendus cupiditate porro, quasi
+                exercitationem voluptate laboriosam?</p>
         </section>
 
         <section class="my-work">
@@ -122,17 +139,11 @@
                 </div>
             </div>
         </section>
-
-        <section class="about-me">
-            <h2>About Me</h2>
-        </section>
     </main>
 
     <footer>
         <p>Designed and Built by Duy Pham</p>
     </footer>
-
-    <script src="./resources/js/general.js"></script>
 </body>
 
 </html>

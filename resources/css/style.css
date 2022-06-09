@@ -10,8 +10,8 @@ h5,
 h6,
 p,
 a {
-    color: wheat;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
 }
 
 h1,
@@ -19,30 +19,45 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6 {}
+
+h1 {
+    font-size: 4rem;
     font-weight: bold;
 }
 
-h1 {
-    font-size: 5rem;
-}
-
 h2 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 html {
     font-size: 16px;
     overflow-y: scroll;
-    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    border-radius: 0.25rem;
 }
 
 body {
-    background-color: darkslategray;
 }
 
 header {
@@ -76,20 +91,20 @@ nav li {
 }
 
 nav a {
-    background-color: navy;
-    border-radius: 0.25rem;
     padding: 0.25rem;
+    border: 0.25rem solid white;
+    border-radius: 0.25rem;
     margin: 0.25rem;
 
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
 
-    transition: all 250ms ease;
+    transition: all 200ms ease;
 }
 
 nav a:hover {
-    background-color: yellow;
+    border: 0.25rem solid yellow;
 }
 
 nav p {
@@ -101,34 +116,57 @@ nav p {
     font-weight: bold;
 }
 
-nav.static {
-}
+nav.static {}
 
 nav.fixed {
     position: fixed;
-    top: -10rem;
 
+    padding: 2rem 1rem 2rem 4rem;
     opacity: 0;
 
-    background-color: rgba(138, 43, 226, 0.25);
-    backdrop-filter: blur(10px) brightness(50%);
+    color: black;
+    background-color: white;
 
     transition: all 200ms ease;
 }
 
+nav.fixed a {
+    border: 0.25rem solid black;
+    color: black;
+}
+
+nav.fixed a:hover {
+    color: white;
+    background-color: black;
+}
+
+nav.fixed p {
+    color: black;
+}
+
 main {
+    background-color: black;
 }
 
 section {
-    padding: 4rem 0;
+    padding: 4rem 8rem;    
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 footer {
     padding: 1rem 1rem 1rem 1rem;
 
-    background-color: darkred;
+    background-color: yellow;
 
     text-align: center;
+}
+
+footer p {
+    color: black;
 }
 
 /* Classes */
@@ -151,22 +189,19 @@ footer {
     background-size: cover;
 
     overflow: hidden;
-    box-shadow: 1rem 1rem crimson;
 }
 
 .project .project-info {
     position: relative;
-    left: -20rem;
+    margin-left: -20rem;
 
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
-    opacity: 0;
-    border-right: 0.25rem solid blue;
 
-    background-color: hsla(0, 0%, 0%, 0.5);
-    backdrop-filter: blur(10px) brightness(50%);
+    opacity: 0;
+    backdrop-filter: blur(10px) brightness(25%);
 
     transition: all 200ms ease;
 }
@@ -176,14 +211,59 @@ footer {
 }
 
 .project .project-info .project-links {
-    position: relative;
-    bottom: -20rem;
-
     padding: 1rem;
     margin-top: auto;
-    opacity: 0;
+}
 
-    background-color: aqua;
+.project:hover > .project-info {
+    opacity: 1;
+    margin-left: 0;
+}
 
-    transition: all 200ms ease 100ms;
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translate(0, -20rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translate(0, -20rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-left {
+    from {
+        opacity: 0;
+        transform: translate(20rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translate(-20rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
